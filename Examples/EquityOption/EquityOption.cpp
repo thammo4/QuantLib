@@ -402,3 +402,42 @@ int main(int, char* []) {
         return 1;
     }
 }
+
+
+//
+// OUTPUT
+//
+
+// thammons@toms-MacBook-Air EquityOption % ./EquityOption
+//
+// Option type = Put
+// Maturity = May 17th, 1999
+// Underlying price = 36
+// Strike = 40
+// Risk-free interest rate = 6.000000 %
+// Dividend yield = 0.000000 %
+// Volatility = 20.000000 %
+//
+//
+// Method                             European      Bermudan      American
+// Black-Scholes                      3.844308      N/A           N/A
+// Black Vasicek Model                3.818577      N/A           N/A
+// Heston semi-analytic               3.844306      N/A           N/A
+// Bates semi-analytic                3.844306      N/A           N/A
+// Barone-Adesi/Whaley                N/A           N/A           4.459628
+// Bjerksund/Stensland                N/A           N/A           4.453064
+// QD+ fixed-point (fast)             N/A           N/A           4.486617
+// QD+ fixed-point (accurate)         N/A           N/A           4.486669
+// QD+ fixed-point (high precision)   N/A           N/A           4.486674
+// Integral                           3.844309      N/A           N/A
+// Finite differences                 3.844330      4.360765      4.486113
+// Binomial Jarrow-Rudd               3.844132      4.361174      4.486552
+// Binomial Cox-Ross-Rubinstein       3.843504      4.360861      4.486415
+// Additive equiprobabilities         3.836911      4.354455      4.480097
+// Binomial Trigeorgis                3.843557      4.360909      4.486461
+// Binomial Tian                      3.844171      4.361176      4.486413
+// Binomial Leisen-Reimer             3.844308      4.360713      4.486076
+// Binomial Joshi                     3.844308      4.360713      4.486076
+// MC (crude)                         3.834522      N/A           N/A
+// QMC (Sobol)                        3.844613      N/A           N/A
+// MC (Longstaff Schwartz)            N/A           N/A           4.456935
