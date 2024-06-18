@@ -1,0 +1,5 @@
+add_executable(BlackScholesExample BlackScholesExample.cpp)
+target_link_libraries(BlackScholesExample ql_library ${QL_THREAD_LIBRARIES})
+if (QL_INSTALL_EXAMPLES)
+	install(TARGETS	BlackScholesExample RUNTIME DESTINATION ${QL_INSTALL_EXAMPLESDIR})
+endif()

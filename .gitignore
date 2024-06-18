@@ -1,3 +1,5 @@
+gitCommits/*
+
 # Compilation artifacts
 configure
 quantlib-config
